@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "BookmarksCloud",
+  "version": "1.0",
+  "description": "监控用户浏览器收藏夹并将其导出为 JSON 发送到服务器",
+  "icons": {
+    "16": "static/icon.png",
+    "48": "static/icon.png",
+    "128": "static/icon.png"
+  },
+  "permissions": ["bookmarks","webRequest", "background", "storage", "activeTab"],
+  "background": {
+    "scripts": ["/src/background/background.js"]
+  },
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_title": "这是一个用来同步浏览器收藏夹的工具"
+   },
+   "default_locale": "zh_CN"
+   
+}
